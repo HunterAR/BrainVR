@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+    <Tracking>
+        <ImageTarget name="Glasses-Marker.Front" size="1.500000 1.000000"/>
+        <ImageTarget name="Glasses-Marker.Left" size="2.000000 1.000000"/>
+        <ImageTarget name="Glasses-Marker.Top" size="1.500000 2.000000"/>
+        <ImageTarget name="Glasses-Marker.Right" size="2.000000 1.000000"/>
+        <ImageTarget name="Glasses-Marker.Bottom" size="1.500000 2.000000"/>
+        <MultiTarget name="Glasses-Marker">
+            <Part name="Glasses-Marker.Left" translation="-0.75 0 0" rotation="AD: 0 1 0 -90"/>
+            <Part name="Glasses-Marker.Right" translation="0.75 0 0" rotation="AD: 0 1 0 90"/>
+            <Part name="Glasses-Marker.Front" translation="0 0 1.0" rotation="AD: 1 0 0 0"/>
+            <Part name="Glasses-Marker.Top" translation="0 0.5 0" rotation="AD: 1 0 0 -90"/>
+            <Part name="Glasses-Marker.Bottom" translation="0 -0.5 0" rotation="AD: 1 0 0 90"/>
+        </MultiTarget>
+    </Tracking>
+</QCARConfig>
