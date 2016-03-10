@@ -4962,12 +4962,12 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.655
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -5027,9 +5027,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mannequin: {fileID: 2026835633}
   head: {fileID: 162022589}
-  _nameText: {fileID: 122767966}
-  _menuPanel: {fileID: 2103475241}
-  scaleName: 
+  nameText: {fileID: 0}
+  menuPanel: {fileID: 0}
+  positionXSlider: {fileID: 0}
+  positionYSlider: {fileID: 0}
+  positionZSlider: {fileID: 0}
+  transparencyVentriclesSlider: {fileID: 0}
+  transparencyHeadSlider: {fileID: 0}
+  scaleSlider: {fileID: 0}
 --- !u!1 &1590829420
 GameObject:
   m_ObjectHideFlags: 0
