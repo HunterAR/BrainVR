@@ -3,13 +3,20 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class ButtonBehaviour : MonoBehaviour {
-    GameObject[] ventricles;
-	int activeVentricleIndex;
-
+	// Serialized fields
 	[SerializeField] private GameObject mannequin;
 	[SerializeField] private GameObject head;
-	[SerializeField] private Text _nameText;
-	[SerializeField] private GameObject _menuPanel;
+	[SerializeField] private Text nameText;
+	[SerializeField] private GameObject menuPanel;
+	[SerializeField] private Slider positionXSlider;
+	[SerializeField] private Slider positionYSlider;
+	[SerializeField] private Slider positionZSlider;
+	[SerializeField] private Slider transparencyVentriclesSlider;
+	[SerializeField] private Slider transparencyHeadSlider;
+	[SerializeField] private Slider scaleSlider;
+
+    GameObject[] ventricles;
+	int activeVentricleIndex;
 
     void Start()
     {
@@ -23,15 +30,21 @@ public class ButtonBehaviour : MonoBehaviour {
 		activeVentricleIndex = 0;
 
 		// Show ventricle name
-		_nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
+		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
 
-		_menuPanel.SetActive (false);
+		// Load saved values
+		Slider[] sliders = GameObject.FindObjectsOfType(typeof(Slider)) as Slider[];
+		foreach (Slider slider in sliders) {
+			slider.value = PlayerPrefs.GetFloat (slider.name, slider.value);
+		}
+
+		menuPanel.SetActive (false);
     }
 
 	public void MenuClick()
 	{
 		// Toggle menu display
-		_menuPanel.SetActive (!_menuPanel.activeInHierarchy);
+		menuPanel.SetActive (!menuPanel.activeInHierarchy);
 	}
 
 
@@ -40,7 +53,7 @@ public class ButtonBehaviour : MonoBehaviour {
 		ventricles [activeVentricleIndex].SetActive (false);
 		activeVentricleIndex = (activeVentricleIndex + 1) % ventricles.Length;
 		ventricles [activeVentricleIndex].SetActive (true);
-		_nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
+		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
     }
 
     public void LeftClick()
@@ -49,25 +62,28 @@ public class ButtonBehaviour : MonoBehaviour {
 		ventricles [activeVentricleIndex].SetActive (false);
 		activeVentricleIndex = (activeVentricleIndex - 1 + ventricles.Length) % ventricles.Length;
 		ventricles [activeVentricleIndex].SetActive (true);
-		_nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
+		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
     }
 
 	public void PositionXChanged(float value) {
 		Vector3 position = mannequin.transform.localPosition;
 		position.x = value;
 		mannequin.transform.localPosition = position;
+		PlayerPrefs.SetFloat (positionXSlider.name, value);
 	}
 
 	public void PositionYChanged(float value) {
 		Vector3 position = mannequin.transform.localPosition;
 		position.y = value;
 		mannequin.transform.localPosition = position;
+		PlayerPrefs.SetFloat (positionYSlider.name, value);
 	}
 
 	public void PositionZChanged(float value) {
 		Vector3 position = mannequin.transform.localPosition;
 		position.z = value;
 		mannequin.transform.localPosition = position;
+		PlayerPrefs.SetFloat (positionZSlider.name, value);
 	}
 
 	public void TransparencyVentriclesChanged(float value) {
@@ -77,15 +93,18 @@ public class ButtonBehaviour : MonoBehaviour {
 			color.a = value;
 			renderers [i].material.color = color;
 		}
+		PlayerPrefs.SetFloat (transparencyVentriclesSlider.name, value);
 	}
 
 	public void TransparencyHeadChanged(float value) {
 		Color color = head.GetComponent<Renderer> ().material.color;
 		color.a = value;
 		head.GetComponent<Renderer> ().material.color = color;
+		PlayerPrefs.SetFloat (transparencyHeadSlider.name, value);
 	}
 
 	public void ScaleValueChanged(float value) {
 		mannequin.transform.localScale = new Vector3 (value, value, value);
+		PlayerPrefs.SetFloat (scaleSlider.name, value);
 	}
 }
