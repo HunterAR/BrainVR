@@ -14,6 +14,7 @@ public class ButtonBehaviour : MonoBehaviour {
 	[SerializeField] private Slider transparencyVentriclesSlider;
 	[SerializeField] private Slider transparencyHeadSlider;
 	[SerializeField] private Slider scaleSlider;
+	[SerializeField] private Slider tiltSlider;
 
     GameObject[] ventricles;
 	int activeVentricleIndex;
@@ -41,6 +42,17 @@ public class ButtonBehaviour : MonoBehaviour {
 		menuPanel.SetActive (false);
     }
 
+	void ShowNextVentricle(int nextVentricleIndex)
+	{
+		ventricles [activeVentricleIndex].SetActive (false);
+		activeVentricleIndex = nextVentricleIndex;
+		ventricles [activeVentricleIndex].SetActive (true);
+		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
+
+		// Apply last transparency to new ventricle; other properties propagate already
+		TransparencyVentriclesChanged (transparencyVentriclesSlider.value);
+	}
+
 	public void MenuClick()
 	{
 		// Toggle menu display
@@ -50,19 +62,12 @@ public class ButtonBehaviour : MonoBehaviour {
 
     public void RightClick()
     {
-		ventricles [activeVentricleIndex].SetActive (false);
-		activeVentricleIndex = (activeVentricleIndex + 1) % ventricles.Length;
-		ventricles [activeVentricleIndex].SetActive (true);
-		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
+		ShowNextVentricle ((activeVentricleIndex + 1) % ventricles.Length);
     }
 
     public void LeftClick()
     {
-
-		ventricles [activeVentricleIndex].SetActive (false);
-		activeVentricleIndex = (activeVentricleIndex - 1 + ventricles.Length) % ventricles.Length;
-		ventricles [activeVentricleIndex].SetActive (true);
-		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
+		ShowNextVentricle((activeVentricleIndex - 1 + ventricles.Length) % ventricles.Length);
     }
 
 	public void PositionXChanged(float value) {
@@ -87,6 +92,7 @@ public class ButtonBehaviour : MonoBehaviour {
 	}
 
 	public void TransparencyVentriclesChanged(float value) {
+		Debug.Log ("transparency");
 		Renderer[] renderers = ventricles [activeVentricleIndex].GetComponentsInChildren<Renderer> ();
 		for (int i = 0; i < renderers.Length; i++) {
 			Color color = renderers [i].material.color;
@@ -106,5 +112,12 @@ public class ButtonBehaviour : MonoBehaviour {
 	public void ScaleValueChanged(float value) {
 		mannequin.transform.localScale = new Vector3 (value, value, value);
 		PlayerPrefs.SetFloat (scaleSlider.name, value);
+	}
+
+	public void TiltValueChanged(float value) {
+		Vector3 rotation = mannequin.transform.localEulerAngles;
+		rotation.x = value;
+		mannequin.transform.localEulerAngles = rotation;
+		PlayerPrefs.SetFloat (tiltSlider.name, value);
 	}
 }
