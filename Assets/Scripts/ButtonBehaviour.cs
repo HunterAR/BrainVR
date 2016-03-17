@@ -17,21 +17,24 @@ public class ButtonBehaviour : MonoBehaviour {
 	[SerializeField] private Slider tiltSlider;
 
     GameObject[] ventricles;
-	int activeVentricleIndex;
+    int activeVentricleIndex;
 
     void Start()
     {
-		// Hide all ventricles except one
-        ventricles = GameObject.FindGameObjectsWithTag("Ventricle");
-        for (int i = 1; i < ventricles.Length; i++)
-        {
-            Debug.Log("come in here");
-            ventricles[i].SetActive(false);
-        }
-		activeVentricleIndex = 0;
+        activeVentricleIndex = 0;
 
-		// Show ventricle name
-		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
+        ventricles = GameObject.FindGameObjectsWithTag("Ventricle");
+        SortAlphabetLength alphaLen = new SortAlphabetLength();
+        
+        foreach (GameObject ventricle in ventricles)
+        {
+            ventricle.SetActive(false);
+        }
+        System.Array.Sort(ventricles, (x, y) => alphaLen.Compare(x.transform.parent.name, y.transform.parent.name));
+
+        ventricles[0].SetActive(true);
+        // Show ventricle name
+        nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
 
 		// Load saved values
 		Slider[] sliders = GameObject.FindObjectsOfType(typeof(Slider)) as Slider[];
@@ -41,17 +44,6 @@ public class ButtonBehaviour : MonoBehaviour {
 
 		menuPanel.SetActive (false);
     }
-
-	void ShowNextVentricle(int nextVentricleIndex)
-	{
-		ventricles [activeVentricleIndex].SetActive (false);
-		activeVentricleIndex = nextVentricleIndex;
-		ventricles [activeVentricleIndex].SetActive (true);
-		nameText.text = ventricles [activeVentricleIndex].transform.parent.name;
-
-		// Apply last transparency to new ventricle; other properties propagate already
-		TransparencyVentriclesChanged (transparencyVentriclesSlider.value);
-	}
 
 	public void MenuClick()
 	{
@@ -70,7 +62,18 @@ public class ButtonBehaviour : MonoBehaviour {
 		ShowNextVentricle((activeVentricleIndex - 1 + ventricles.Length) % ventricles.Length);
     }
 
-	public void PositionXChanged(float value) {
+    void ShowNextVentricle(int nextVentricleIndex)
+    {
+        ventricles[activeVentricleIndex].SetActive(false);
+        activeVentricleIndex = nextVentricleIndex;
+        ventricles[activeVentricleIndex].SetActive(true);
+        nameText.text = ventricles[activeVentricleIndex].transform.parent.name;
+
+        // Apply last transparency to new ventricle; other properties propagate already
+        TransparencyVentriclesChanged(transparencyVentriclesSlider.value);
+    }
+
+    public void PositionXChanged(float value) {
 		Vector3 position = mannequin.transform.localPosition;
 		position.x = value;
 		mannequin.transform.localPosition = position;
