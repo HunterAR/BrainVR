@@ -95,7 +95,6 @@ public class ButtonBehaviour : MonoBehaviour {
 	}
 
 	public void TransparencyVentriclesChanged(float value) {
-		Debug.Log ("transparency");
 		Renderer[] renderers = ventricles [activeVentricleIndex].GetComponentsInChildren<Renderer> ();
 		for (int i = 0; i < renderers.Length; i++) {
 			Color color = renderers [i].material.color;
