@@ -1,0 +1,40 @@
+﻿Build started 2016-03-30 10:29:06 AM.
+     1>Project "C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningGUI\MachineLearningGUI.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Users\Ishan\Documents\5th Year\Capstone\dlib-18.17" /I"C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningModule" /I"C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_WARNINGS /D _CRT_SECURE_NO_WARNINGS /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib MLTrainer.cpp
+         MLTrainer.cpp
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningmodule\RegressionTrainer.h(27): warning C4251: 'MachineLearningTraining::RegressionTrainer::file_names' : class 'std::vector<std::string,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'MachineLearningTraining::RegressionTrainer'
+                 with
+                 [
+                     _Ty=std::string
+                 ]
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningmodule\RegressionTrainer.h(28): warning C4251: 'MachineLearningTraining::RegressionTrainer::input_data' : class 'std::vector<MachineLearning::sample_type,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'MachineLearningTraining::RegressionTrainer'
+                 with
+                 [
+                     _Ty=MachineLearning::sample_type
+                 ]
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningmodule\RegressionTrainer.h(34): warning C4251: 'MachineLearningTraining::RegressionTrainer::augmented_outputs' : class 'std::vector<double,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'MachineLearningTraining::RegressionTrainer'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningmodule\RegressionTrainer.h(35): warning C4251: 'MachineLearningTraining::RegressionTrainer::non_augmented_outputs' : class 'std::vector<double,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'MachineLearningTraining::RegressionTrainer'
+                 with
+                 [
+                     _Ty=double
+                 ]
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningmodule\RegressionTrainer.h(36): warning C4251: 'MachineLearningTraining::RegressionTrainer::result' : struct 'pugi::xml_parse_result' needs to have dll-interface to be used by clients of class 'MachineLearningTraining::RegressionTrainer'
+                 c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningmodule\pugixml.hpp(918) : see declaration of 'pugi::xml_parse_result'
+     1>C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningModule\KRRTrainer.h(14): warning C4251: 'MachineLearningTraining::KRRTrainer::trainer' : class 'dlib::krr_trainer<MachineLearning::kernel_type>' needs to have dll-interface to be used by clients of class 'MachineLearningTraining::KRRTrainer'
+     1>C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningModule\SVRTrainer.h(15): warning C4251: 'MachineLearningTraining::SVRTrainer::trainer' : class 'dlib::svr_trainer<MachineLearning::kernel_type>' needs to have dll-interface to be used by clients of class 'MachineLearningTraining::SVRTrainer'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningGUI.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\MachineLearningGUI.MLTrainer.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningGUI.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\MLTrainer.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         "C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningModule.lib"
+            Creating library C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningGUI.lib and object C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningGUI.exp
+         MachineLearningGUI.vcxproj -> C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningGUI.exe
+     1>Done Building Project "C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningGUI\MachineLearningGUI.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:24.95

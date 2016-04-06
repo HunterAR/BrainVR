@@ -1,0 +1,114 @@
+<data>
+	<independent>
+		<patient total-volume="159.83" evan-ratio="0.41">
+		</patient>
+		<patient total-volume="256.57" evan-ratio="0.472">
+		</patient>
+		<patient total-volume="148.53" evan-ratio="0.36">
+		</patient>
+		<patient total-volume="286.81" evan-ratio="0.473">
+		</patient>
+		<patient total-volume="217.7" evan-ratio="0.368">
+		</patient>
+		<patient total-volume="73.2" evan-ratio="0.248">
+		</patient>
+		<patient total-volume="82.89" evan-ratio="0.273">
+		</patient>
+		<patient total-volume="589.3" evan-ratio="0.682">
+		</patient>
+		<patient total-volume="23.9" evan-ratio="0.244">
+		</patient>
+		<patient total-volume="9.16" evan-ratio="0.24">
+		</patient>
+		<patient total-volume="14.65" evan-ratio="0.24">
+		</patient>
+		<patient total-volume="87.31" evan-ratio="0.307">
+		</patient>
+		<patient total-volume="14.76" evan-ratio="0.205">
+		</patient>
+	</independent>
+	<dependent>
+		<augmented>
+			<score>
+				2.75
+			</score>
+			<score>
+				2.5
+			</score>
+			<score>
+				2.5
+			</score>
+			<score>
+				3
+			</score>
+			<score>
+				3.75
+			</score>
+			<score>
+				2.75
+			</score>
+			<score>
+				3.5
+			</score>
+			<score>
+				2.25
+			</score>
+			<score>
+				3.5
+			</score>
+			<score>
+				3.5
+			</score>
+			<score>
+				3.25
+			</score>
+			<score>
+				3.25
+			</score>
+			<score>
+				4
+			</score>
+		</augmented>
+		<non-augmented>
+			<score>
+				3
+			</score>
+			<score>
+				2.3
+			</score>
+			<score>
+				1.7
+			</score>
+			<score>
+				3
+			</score>
+			<score>
+				4.1
+			</score>
+			<score>
+				1.9
+			</score>
+			<score>
+				3.2
+			</score>
+			<score>
+				2
+			</score>
+			<score>
+				3.4
+			</score>
+			<score>
+				3.5
+			</score>
+			<score>
+				3.9
+			</score>
+			<score>
+				3
+			</score>
+			<score>
+				4.4
+			</score>
+		</non-augmented>
+	</dependent>
+</data>

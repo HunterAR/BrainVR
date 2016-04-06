@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MachineLearningPrototype2", "MachineLearningPrototype2\MachineLearningPrototype2.vcxproj", "{FEF77E0A-F1D7-496F-AE5B-13AE1400A30A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MachineLearningGUI", "MachineLearningGUI\MachineLearningGUI.vcxproj", "{D89CBDDF-5887-4A0D-A84A-A7CC9912889E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MachineLearningLibrary", "MachineLearningLibrary\MachineLearningLibrary.vcxproj", "{CC5ED620-4FA5-4F18-AEE9-67B52C2B957D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MachineLearningModule", "MachineLearningModule\MachineLearningModule.vcxproj", "{69C54011-95BE-4062-82D5-426461D7CC29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEF77E0A-F1D7-496F-AE5B-13AE1400A30A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEF77E0A-F1D7-496F-AE5B-13AE1400A30A}.Debug|Win32.Build.0 = Debug|Win32
+		{FEF77E0A-F1D7-496F-AE5B-13AE1400A30A}.Release|Win32.ActiveCfg = Release|Win32
+		{FEF77E0A-F1D7-496F-AE5B-13AE1400A30A}.Release|Win32.Build.0 = Release|Win32
+		{D89CBDDF-5887-4A0D-A84A-A7CC9912889E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D89CBDDF-5887-4A0D-A84A-A7CC9912889E}.Debug|Win32.Build.0 = Debug|Win32
+		{D89CBDDF-5887-4A0D-A84A-A7CC9912889E}.Debug|Win32.Deploy.0 = Debug|Win32
+		{D89CBDDF-5887-4A0D-A84A-A7CC9912889E}.Release|Win32.ActiveCfg = Release|Win32
+		{D89CBDDF-5887-4A0D-A84A-A7CC9912889E}.Release|Win32.Build.0 = Release|Win32
+		{CC5ED620-4FA5-4F18-AEE9-67B52C2B957D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC5ED620-4FA5-4F18-AEE9-67B52C2B957D}.Debug|Win32.Build.0 = Debug|Win32
+		{CC5ED620-4FA5-4F18-AEE9-67B52C2B957D}.Release|Win32.ActiveCfg = Release|Win32
+		{CC5ED620-4FA5-4F18-AEE9-67B52C2B957D}.Release|Win32.Build.0 = Release|Win32
+		{69C54011-95BE-4062-82D5-426461D7CC29}.Debug|Win32.ActiveCfg = Debug|Win32
+		{69C54011-95BE-4062-82D5-426461D7CC29}.Debug|Win32.Build.0 = Debug|Win32
+		{69C54011-95BE-4062-82D5-426461D7CC29}.Release|Win32.ActiveCfg = Release|Win32
+		{69C54011-95BE-4062-82D5-426461D7CC29}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

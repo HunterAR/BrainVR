@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<user userid="1"
+ xmlns:xsi="http://www.ryarmst.com/surgsimschema"
+ xsi:noNamespaceSchemaLocation="user.xsd">
+	<userinfo>
+		<experience>R3</experience>
+		<assessments>NE</assements>
+		<specialcase>NE</specialcase>
+	</userinfo>
+	<study>
+		<studyid>1</studyid>
+		<groupid>2</groupid>
+		<caseorder>1a,2b,1b,2a</caseorder>
+		<numberoftasks>4</numberoftasks>
+		<artasks>3,4</artasks>
+		<data>
+			<time>22,18,17,32</time>
+			<burrholetrajectories>12.12, -0.0087, 0.676; 12.12, -0.0087, 0.676; 12.12, -0.0087, 0.676; 12.12, -0.0087, 0.676</burrholetrajectories>
+			<ventricletrajectories>12.12, -0.0087, 0.676; 12.12, -0.0087, 0.676; 12.12, -0.0087, 0.676; 12.12, -0.0087, 0.676</ventricletrajectories>
+			<video>video.mp4</video>
+		</data>
+		<analysis>
+			<engagement>2.124</engagement>
+			<relativecoronalangulation>1.64</relativecoronalangulation>
+			<relativesagittalangulation>2.43</relativesaggittalangulation>
+			<errormargin>115.13</errormargin>
+			<distancefromforamen>43.29</distancefromforamen>
+			<expertscore>4</expertscore>
+		</analysis>
+	</study>
+</user> 

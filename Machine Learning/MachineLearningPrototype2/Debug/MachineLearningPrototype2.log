@@ -1,0 +1,20 @@
+﻿Build started 2016-03-04 9:38:56 AM.
+     1>Project "C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningPrototype2\MachineLearningPrototype2.vcxproj" on node 3 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt KernelRidgeRegression.cpp MachineLearning.cpp pugixml.cpp Regression.cpp SupportVectorRegression.cpp
+         SupportVectorRegression.cpp
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningprototype2\supportvectorregression.h(5): fatal error C1083: Cannot open include file: 'RegressionTrainer.h': No such file or directory
+         Regression.cpp
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningprototype2\regression.cpp(1): error C2006: '#include' : expected a filename, found 'newline'
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningprototype2\regression.cpp(1): fatal error C1083: Cannot open include file: '': No such file or directory
+         pugixml.cpp
+         MachineLearning.cpp
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningprototype2\kernelridgeregression.h(4): fatal error C1083: Cannot open include file: 'RegressionTrainer.h': No such file or directory
+         KernelRidgeRegression.cpp
+     1>c:\users\ishan\documents\5th year\capstone\machinelearningprototype2\machinelearningprototype2\kernelridgeregression.h(4): fatal error C1083: Cannot open include file: 'RegressionTrainer.h': No such file or directory
+         Generating Code...
+     1>Done Building Project "C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningPrototype2\MachineLearningPrototype2.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.23

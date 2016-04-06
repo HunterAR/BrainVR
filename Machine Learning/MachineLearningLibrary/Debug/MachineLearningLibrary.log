@@ -1,0 +1,124 @@
+﻿Build started 2016-03-21 4:27:13 PM.
+     1>Project "C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningLibrary\MachineLearningLibrary.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\include" /I"C:\Users\Ishan\Documents\5th Year\Capstone\dlib-18.17" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\MachineLearningLibrary.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningLibrary.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib Stdafx.cpp
+         Stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\include" /I"C:\Users\Ishan\Documents\5th Year\Capstone\dlib-18.17" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\Debug\MachineLearningLibrary.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib AssemblyInfo.cpp KRRTrainer.cpp KRRPredictor.cpp pugixml.cpp RegressionPredictor.cpp RegressionTrainer.cpp SVRTrainer.cpp SVRPredictor.cpp
+         AssemblyInfo.cpp
+         KRRTrainer.cpp
+         KRRPredictor.cpp
+         pugixml.cpp
+     1>pugixml.cpp(1077): error C2039: 'xml_memory_page' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1077): error C2061: syntax error : identifier 'xml_memory_page'
+     1>pugixml.cpp(1077): error C2065: 'page' : undeclared identifier
+     1>pugixml.cpp(1092): error C2039: 'xml_memory_page' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1092): error C2061: syntax error : identifier 'xml_memory_page'
+     1>pugixml.cpp(1092): error C2065: 'page' : undeclared identifier
+     1>pugixml.cpp(1092): error C2065: 'type' : undeclared identifier
+     1>pugixml.cpp(1123): error C2661: 'pugi::xml_node_struct::xml_node_struct' : no overloaded function takes 2 arguments
+     1>pugixml.cpp(1161): error C2664: 'pugi::xml_attribute_struct::xml_attribute_struct(const pugi::xml_attribute_struct &)' : cannot convert argument 1 from 'pugi::impl::?A0x399113fa::xml_memory_page *' to 'const pugi::xml_attribute_struct &'
+                 Reason: cannot convert from 'pugi::impl::?A0x399113fa::xml_memory_page *' to 'const pugi::xml_attribute_struct'
+                 No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+     1>pugixml.cpp(1170): error C2661: 'pugi::xml_node_struct::xml_node_struct' : no overloaded function takes 2 arguments
+     1>pugixml.cpp(1175): error C2039: 'xml_memory_page_name_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1178): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1181): error C2039: 'xml_memory_page' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1181): error C2039: 'xml_memory_page_pointer_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1186): error C2039: 'xml_memory_page_name_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1189): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1210): error C2039: 'xml_memory_page' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(1210): error C2039: 'xml_memory_page_pointer_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(3321): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(3402): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4034): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4104): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4118): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4129): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4159): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4185): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4292): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4334): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4574): error C2039: 'get_buffer_encoding' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4580): error C2039: 'convert_buffer' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4580): error C2039: 'make_parse_result' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4583): error C3083: 'xml_memory': the symbol to the left of a '::' must be a type
+     1>pugixml.cpp(4583): error C2039: 'deallocate' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4583): error C3861: 'deallocate': identifier not found
+     1>pugixml.cpp(4592): error C3083: 'xml_parser': the symbol to the left of a '::' must be a type
+     1>pugixml.cpp(4592): error C2039: 'parse' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(4592): error C3861: 'parse': identifier not found
+     1>pugixml.cpp(5048): error C2039: 'get_value_int' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5048): error C3861: 'get_value_int': identifier not found
+     1>pugixml.cpp(5053): error C2039: 'get_value_uint' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5053): error C3861: 'get_value_uint': identifier not found
+     1>pugixml.cpp(5058): error C2039: 'get_value_double' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5058): error C3861: 'get_value_double': identifier not found
+     1>pugixml.cpp(5063): error C2039: 'get_value_float' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5063): error C3861: 'get_value_float': identifier not found
+     1>pugixml.cpp(5068): error C2039: 'get_value_bool' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5068): error C3861: 'get_value_bool': identifier not found
+     1>pugixml.cpp(5074): error C2039: 'get_value_llong' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5074): error C3861: 'get_value_llong': identifier not found
+     1>pugixml.cpp(5079): error C2039: 'get_value_ullong' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5079): error C3861: 'get_value_ullong': identifier not found
+     1>pugixml.cpp(5162): error C2039: 'strcpy_insitu' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5162): error C2039: 'xml_memory_page_name_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5162): error C2065: 'xml_memory_page_name_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5162): error C2039: 'strlength' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5162): error C3861: 'strcpy_insitu': identifier not found
+     1>pugixml.cpp(5162): error C3861: 'strlength': identifier not found
+     1>pugixml.cpp(5169): error C2039: 'strcpy_insitu' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5169): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5169): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5169): error C2039: 'strlength' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5169): error C3861: 'strcpy_insitu': identifier not found
+     1>pugixml.cpp(5169): error C3861: 'strlength': identifier not found
+     1>pugixml.cpp(5176): error C2039: 'set_value_convert' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5176): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5176): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5176): error C3861: 'set_value_convert': identifier not found
+     1>pugixml.cpp(5183): error C2039: 'set_value_convert' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5183): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5183): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5183): error C3861: 'set_value_convert': identifier not found
+     1>pugixml.cpp(5190): error C2039: 'set_value_convert' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5190): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5190): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5190): error C3861: 'set_value_convert': identifier not found
+     1>pugixml.cpp(5197): error C2039: 'set_value_convert' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5197): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5197): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5197): error C3861: 'set_value_convert': identifier not found
+     1>pugixml.cpp(5204): error C2039: 'set_value_convert' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5204): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5204): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5204): error C3861: 'set_value_convert': identifier not found
+     1>pugixml.cpp(5212): error C2039: 'set_value_convert' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5212): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5212): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5212): error C3861: 'set_value_convert': identifier not found
+     1>pugixml.cpp(5219): error C2039: 'set_value_convert' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5219): error C2039: 'xml_memory_page_value_allocated_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5219): error C2065: 'xml_memory_page_value_allocated_mask' : undeclared identifier
+     1>pugixml.cpp(5219): error C3861: 'set_value_convert': identifier not found
+     1>pugixml.cpp(5334): error C2039: 'xml_memory_page_type_mask' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5334): error C2065: 'xml_memory_page_type_mask' : undeclared identifier
+     1>pugixml.cpp(5347): error C2039: 'strequal' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5347): error C3861: 'strequal': identifier not found
+     1>pugixml.cpp(5357): error C2039: 'strequal' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5357): error C3861: 'strequal': identifier not found
+     1>pugixml.cpp(5368): error C2039: 'strequal' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5368): error C3861: 'strequal': identifier not found
+     1>pugixml.cpp(5383): error C2039: 'strequal' : is not a member of 'pugi::impl'
+     1>pugixml.cpp(5383): error C3861: 'strequal': identifier not found
+     1>pugixml.cpp(5383): fatal error C1003: error count exceeds 100; stopping compilation
+         RegressionPredictor.cpp
+         RegressionTrainer.cpp
+         SVRTrainer.cpp
+         SVRPredictor.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\Ishan\Documents\5th Year\Capstone\MachineLearningPrototype2\MachineLearningLibrary\MachineLearningLibrary.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:01:38.61

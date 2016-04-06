@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<case caseid="1"
+ xmlns:xsi="http://www.ryarmst.com/surgsimschema"
+ xsi:noNamespaceSchemaLocation="user.xsd">
+	<meshtype>Ellipsoid</meshtype>
+	<meshes>
+		<ellipsoid>file1.stl</ellipsoid>
+	</meshes>
+	<measures>
+		<eccentricity>0.172955912</eccentricity>
+		<volume>0.656694817</volume>
+		<distancefromentry>0.045954683</distancefromentry>
+	</measures>
+	<studyresults>
+		<averageangledeviation>7.357799428</averageangledeviation>
+		</studyresults>
+</case>
